@@ -7,6 +7,11 @@ public class Movie {
     public int year;
     public double rating;
 
+    @Override
+    public String toString() {
+        return rating + ", " + title + " (" + year + ")";
+    }
+
     public Movie(String title, int year, double rating) {
         this.title = title;
         this.year = year;
